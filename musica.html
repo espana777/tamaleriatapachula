@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reproducir música con clic</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      margin-top: 100px;
+      background-color: #111;
+      color: white;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      background-color: #00aaff;
+      color: white;
+      transition: 0.3s;
+    }
+    button:hover {
+      background-color: #0088cc;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎵 Mi página con música</h1>
+  <button id="playButton">Activar música</button>
+
+  <audio id="miMusica" src="/audio/Chiapanecas.mp3" loop preload="auto"></audio>
+
+  <script>
+    const boton = document.getElementById('playButton');
+    const audio = document.getElementById('miMusica');
+
+    boton.addEventListener('click', () => {
+      if (audio.paused) {
+        audio.play();
+        boton.textContent = '⏸️ Pausar música';
+      } else {
+        audio.pause();
+        boton.textContent = '▶️ Reproducir música';
+      }
+    });
+  </script>
+</body>
+</html>
