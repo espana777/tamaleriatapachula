@@ -1,0 +1,232 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    color: #8b0000; /* Color rojo oscuro, como un guisado */
+    background-color: whitesmoke;
+}
+
+h1, h2, h3 {
+    color: #8b0000; /* Color rojo oscuro, como un guisado */
+    text-align: center;
+}
+
+/* Encabezado */
+.header {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 3em;
+    margin-bottom: 5px;
+}
+
+.header p {
+    font-size: 1.2em;
+    font-style: italic;
+    margin-top: 0;
+}
+
+p{
+    text-align: center;
+    display: block;
+    margin: 10px auto;
+}
+
+.header img {
+    width: 100%;
+    height: 100%;
+}
+
+button {
+    display: block;         /* o inline-block */
+    margin: 0 auto;         /* centra horizontalmente */
+    background-color: #25d366;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+    button:hover {
+      background-color: #12aa45;
+    }
+
+
+/* --- Estilos para la Nueva Sección de Tamal Estrella (Banner) --- */
+.tamal-estrella-banner {
+    text-align: center;
+    padding: 40px 20px;
+
+}
+
+/* --- Estilos para la Sección Destacada --- */
+.seccion-destacada {
+    border-radius: 12px;
+    margin: 40px auto;
+    padding: 30px 20px;
+    max-width: 1200px;
+}
+
+
+.tamal-estrella-banner h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.estrella-imagen-contenedor {
+    display: inline-block;
+    width: 90%; /* Ocupa el 90% del ancho del contenedor */
+    max-width: 1200px; /* Ancho máximo para que no sea demasiado grande en pantallas amplias */
+    margin: 0 auto;
+    border-radius: 30px;
+    overflow: hidden;
+    position: relative;
+}
+
+.estrella-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.info-pedido p {
+    margin: 5px 0;
+}
+
+/* Contenedor de Productos */
+.productos-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap; /* Permite que las tarjetas se envuelvan */
+    justify-content: center; /* Centra las tarjetas */
+    gap: 30px; /* Espacio entre las tarjetas */
+}
+
+.productos-container h2 {
+    width: 100%; /* El título ocupa todo el ancho */
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    border-bottom: 3px solid #8b0000;
+    padding-bottom: 10px;
+}
+
+/* Tarjeta de Tamal Individual */
+.tamal-card {
+    /* background-color: #50C878; */
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Ancho fijo para las tarjetas */
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.tamal-card:hover {
+    transform: translateY(-5px); /* Efecto al pasar el mouse */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.tamal-img {
+    width: 100%;
+    height: 200px; /* Altura fija para las imágenes */
+    object-fit: cover; /* Asegura que la imagen cubra el área sin deformarse */
+}
+
+.tamal-card h3 {
+    margin: 15px 0 10px;
+    font-size: 1.5em;
+}
+
+.tamal-card p {
+    padding: 0 15px;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+
+/* Botón Flotante de WhatsApp */
+.whatsapp-btn {
+    position: fixed; /* Lo mantiene visible al hacer scroll */
+    bottom: 30px; /* Distancia desde abajo */
+    right: 30px; /* Distancia desde la derecha */
+    background-color: #25d366; /* Verde de WhatsApp */
+    padding: 10px 20px;
+    border-radius: 30px; /* Forma de píldora/redondeada */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    z-index: 100; /* Asegura que esté por encima de otros elementos */
+}
+
+.whatsapp-btn:hover {
+    background-color: #2DF061; /* Verde más oscuro al pasar el mouse */
+    transform: scale(1.05);
+}
+
+.whatsapp-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+/* Pie de Página */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+
+
+/* Media Queries para Responsividad (Opcional, pero recomendado) */
+@media (max-width: 650px) {
+    .header h1 {
+        font-size: 2.5em;
+    }
+    .productos-container {
+        padding: 10px;
+    }
+    .tamal-card {
+        width: 100%; /* En móviles, las tarjetas ocupan todo el ancho */
+        max-width: 350px;
+    }
+    .whatsapp-btn {
+        font-size: 1em;
+        padding: 8px 15px;
+        bottom: 20px;
+        right: 20px;
+    }
+    .whatsapp-icon {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+
+/* --- Animación del Botón de WhatsApp --- */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+.whatsapp-btn {
+    animation: float 3s ease-in-out infinite; /* Movimiento suave */
+}
