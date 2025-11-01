@@ -5,7 +5,7 @@
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
     color: #8b0000; /* Color rojo oscuro, como un guisado */
-    background-color: #50C878;
+    background-color: whitesmoke;
 }
 
 h1, h2, h3 {
@@ -15,8 +15,9 @@ h1, h2, h3 {
 
 /* Encabezado */
 .header {
-    background-color: #50C878; /* Rojo profundo, distintivo */
-    padding: 40px 20px;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
     text-align: center;
 }
 
@@ -37,10 +38,15 @@ p{
     margin: 10px auto;
 }
 
+.header img {
+    width: 100%;
+    height: 100%;
+}
+
 button {
     display: block;         /* o inline-block */
     margin: 0 auto;         /* centra horizontalmente */
-    background-color: #04963c;
+    background-color: #25d366;
     padding: 10px 20px;
     font-size: 18px;
     border: none;
@@ -115,7 +121,7 @@ button {
 
 /* Tarjeta de Tamal Individual */
 .tamal-card {
-    background-color: #50C878;
+    /* background-color: #50C878; */
     border-radius: 20px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     width: 300px; /* Ancho fijo para las tarjetas */
