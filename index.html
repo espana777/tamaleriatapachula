@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Los mejores tamales estilo Chiapas. Sabores auténticos: Tamal de cambray de pollo con mole y pasitas, chipilín con pollo en salsa de tomate, chocolate relleno de chispas de chocolate semi amargo, empanadas de plátano macho rellenas de frijol. ¡Pide por whatsapp y te entregamos en tu domicilio!">
+    <meta name="keywords" content="Chiapas, sabores auténticos, tamal, cambray, pollo, mole, pasitas, chipilin, chocolate, empanadas">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Tamalería Tapachula | Los Mejores Tamales a Domicilio en ciudad de México 🛵</title>
+</head>
+<body>
+  
+ 
+  <header class="header header--overlay">
+  <img src="./imagenes/volcan.png" alt="Volcán - Tamalería Tapachula" class="header-bg">
+  <div class="header-text-overlay">
+    <h1>Tamalería Tapachula</h1>
+    <p class="subtitulo">Estilo Chiapas</p>
+  </div>
+</header>
+
+<p class="lead">Saborea la tradición del auténtico tamal artesanal al estilo Chiapas</p>
+
+    <button id="playButton">Escucha la melodía del sabor.</button>
+    <p>
+      Atribución:Musica: Bulmaro Lopez Fernandez. Letra: Juan Arozamena Sánchez.,dominio público, via Wikimedia Commons
+    </p>
+
+    <audio id="miMusica" src="./audio/Chiapanecas.ogg" loop preload="auto"></audio>
+
+      <section class="tamal-estrella-banner seccion-destacada">
+        <h2>Nuestro Tamal Estrella ⭐</h2>
+          <div class="info-pedido">
+            <p>💰 **PRECIO POR UNIDAD:** **$25.00** MXN</p>
+            <p>📦 **PEDIDO MÍNIMO:** **30 Tamales** (4 días de anticipación )</p>
+            <p>Zona sur en la ciudad de México, alcaldía Álvaro Obregón.</p>
+            <p>ATENCIÓN: Luis Rivera y Maritza Plata</p>
+            <p>Clave interbancaria:</p>
+          </div>
+          <div class="estrella-imagen-contenedor">
+            <img src="./imagenes/chipilin.jpeg" alt="cambrary" class="estrella-img">
+              <div class="estrella-caption">
+          </div>
+      </section>
+
+      <main class="productos-container seccion-destacada" id="productos">
+        <h2>Nuestra Selección de Tamales</h2>
+        
+        <div class="tamal-card">
+            <img src="./imagenes/chipilin.jpeg" alt="chocolate" class="tamal-img">
+            <h3>Tamal de chipilín</h3>
+            <p>El tradicional tamal de chipilín con pollo en salsa de tomate, envuelto en hoja de plátano.</p>
+        </div>
+
+        <div class="tamal-card">
+            <img src="./imagenes/cambrary.jpeg" alt="Tamal de chipilín" class="tamal-img">
+            <h3>Tamal de cambray</h3>
+            <p>El tradicional tamal de cambray en hoja de plátano.</p>
+        </div>
+
+        <div class="tamal-card">
+            <img src="./imagenes/hojaSanta.jpeg" alt="Empanadas de plátano" class="tamal-img">
+            <h3>Hoja santa</h3>
+            <p>Tamal de hoja santa, relleno de frijol con chipotle.</p>
+        </div>
+
+        <div class="tamal-card">
+            <img src="./imagenes/Elote.jpeg" alt="Elote" class="tamal-img">
+            <h3>Elote (Dulce)</h3>
+            <p>Para el postre. Elote. Perfecto para acompañar tu atole.</p>
+        </div>
+
+        <div class="tamal-card">
+            <img src="./imagenes/empanadasPlatano.jpeg" alt="Hoja santa" class="tamal-img">
+            <h3>Empanadas de plátano</h3>
+            <p>Combinación de plátano macho, rellenas de frijol o queso cotija. Un deleite.</p>
+        </div>
+    </main>
+
+    <a href="https://wa.me/525520943571?text=Hola,%20quiero%20informes%20de%20los%20tamales." target="_blank" class="whatsapp-btn">
+         <i class="fa-brands fa-whatsapp"></i>
+        ¡Quiero informes sobre el pedido de tamales!
+    </a>
+
+    <footer class="seccion-destacada seccion-oscura">
+        <p>&copy; 2025 Tamalería Tapachula. ¡Gracias por tu preferencia!</p>
+    </footer>
+
+  <script>
+    const boton = document.getElementById('playButton');
+    const audio = document.getElementById('miMusica');
+
+    boton.addEventListener('click', () => {
+      if (audio.paused) {
+        audio.play();
+        boton.textContent = '⏸️ Pausar música';
+      } else {
+        audio.pause();
+        boton.textContent = '▶️ Reproducir música';
+      }
+    });
+  </script>
+</body>
+
+</html>
+
+
